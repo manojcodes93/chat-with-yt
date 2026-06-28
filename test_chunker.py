@@ -7,7 +7,7 @@ from core.chunker import chunk_segments
 load_dotenv()
 
 api_key = os.getenv("GROQ_API_KEY")
-segments = transcript(r"D:\Projects\chat-with-yt\temp\Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster).mp3", api_key)
+segments = transcript(r"D:\Projects\chat-with-yt\temp\You Can Never Become Pope.mp3", api_key)
 
 chunks = chunk_segments(segments, chunk_duration=30.0, overlap=5.0)
 
